@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Cybrogue Map Generator
+	</title>
+</head>
+<body>
+	<div class="welcome">
+		<h2>Cybrogue Map Generator</h2>
+		<br>
+	</div>
+
+	<div class="container" id="tile-area">
+		<h3>Customize options, than reload the chapter to start</h3>
+	</div>
+	<button class="button" id="show-hide">Show/hide options</button>
+	<button class="button" id="reload-chapter">reload chapter</button>
+	<!-- USER INPUT -->
+	<div class="user-input" id="allOptions" style="display: block;">
+		<div>
+			<h3><u>current run info</u>:</h3>
+			<!-- <p>Current chapter:  </p> -->
+			<p id="finished-districts"><strong>Finished districts:</strong></p>
+			<p id="rewards-gained"><strong>Rewards gained: </strong> </p>
+			<p><strong>	Current chapter pool:</strong><button class="console-log" id="log-current-pool">show <strong>current</strong> pool in the console</button>  (ctrl+shift+j to open the console)</p>
+			<p><strong>Overal chapter pool:</strong><button class="console-log" id="log-overall-pool">show <strong>overall</strong> (weight) pool in the console</button></p>
+		</div>
+		<hr>
+		<div id="district-quantity">
+			<div>
+				<h3>Change settings:</h3>
+				<label>Number of tiles in play area:</label>
+			  	<input class="district-count" id="tile-number" type="number" min="1" max="9" step="1" value="2"><br><br><br>
+			  	<label>Chapter length: </label>
+			  	<input class="district-count" id="chapter-length" type="number" min="1" max="100" step="1" value="10"><br>	  	
+			</div>
+			<div class="district-table">
+				<br>
+				<br>
+				<label>Types of districts:</label>
+				<br>
+				<br>
+				<table id="district-table">
+					<tr>
+						<th>District name</th>
+						<th>Possible reward(s)</th>
+						<th>Difficulty</th>
+						<th>Instances in the pool <br>(weight balance)</th>
+						<th>Must encounter</th>
+						<th>Max count</th>
+					</tr>
+				</table>
+				<button id="new-district">new district</button>
+			</div>
+			<hr>
+			<div>
+				<button class="reward-options" id="add-reward">add reward</button>
+				<button class="reward-options" id="clear-rewards">clear rewards</button>
+			</div>
+		</div>
+
+		<button class="button" id="confirm">confirm changes and reload</button>
+	</div>	
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

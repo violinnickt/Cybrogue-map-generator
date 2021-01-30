@@ -1,0 +1,127 @@
+:root {
+  --column-count: 2;
+}
+
+body {
+
+  font-family: Arial, Helvetica, "sans-serif";
+  margin: 20px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+/* District cards*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content:  center; 
+/*  grid-gap: 4%;
+  grid-template-columns: repeat(var(--column-count), auto);
+  grid-template-rows: 1fr;
+  margin-bottom: 200px;*/
+}
+
+.card:hover {
+  background-color: #81c6f7;
+  cursor: pointer;
+}
+
+.card:active {
+}
+
+.card {
+  flex-basis: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /*this adds the "card" effect*/ 
+  padding: 16px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: #f1f1f1;
+  position:relative;
+}
+
+.show-diffic {
+  margin-top: auto;
+  position:absolute;
+  bottom: 0;
+}
+
+.user-input {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 6px solid black
+}
+
+
+.district-count {
+  width: 10%;
+  font-size: 14pt;
+  margin: 16px;
+  padding: 7px;
+  text-align: center;
+}
+
+#district-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#district-table td, #district-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#district-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#district-table tr:hover {background-color: #ddd;}
+
+#district-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  vertical-align: middle;
+  background-color: #4287f5;
+  color: white;
+}
+
+
+.button {
+  font-size: 16pt;
+  padding: 7px;
+  margin: 16px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.console-log {
+  margin-left: 20px;
+  margin-right: 60px;
+}
+
+.remove {
+  float: right;
+  font-size: 12pt;
+  padding: 7px;
+  margin: 16px;
+}
+
+.rename {
+  margin-left: 15px;
+}
+
+.reward-options {
+  margin: 15px;
+}
+
+#confirm {
+  background-color: rgba(0, 122, 255, 0);
+}
+
+#confirm:hover {
+  background-color: rgba(0, 150, 255, 0.8);
+  cursor: pointer;
+}
